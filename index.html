@@ -1,37 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+
   <header>
-    <div class="logo">
-      <img src="./assets/images/logo.png" alt="request_design_logo">
-    </div>
+
     <nav class="menu">
-      <div>Главная</div>
-      <div>Каталог</div>
-      <div>Новости</div>
-      <div>Наш АЦС</div>
-      <div>Контакты</div>
-      <div>
+      <img class="logo" src="./assets/images/logo.png" alt="request_design_logo">
+      <div class="menu__item"><a href="#">Главная</a></div>
+      <div class="menu__item"><a href="#">Каталог</a></div>
+      <div class="menu__item"><a href="#">Новости</a></div>
+      <div class="menu__item"><a href="#">Наш АЦС</a></div>
+      <div class="menu__item"><a href="#">Контакты</a></div>
+      <button>
         <img src="./assets/icons/magnifying-glass.svg" alt="magnifying_glass">
-      </div>
+      </button>
     </nav>
+
     <nav class="user">
-      <div>
-        <img src="./assets/icons/user-info.png" alt="user-info">
-        <img src="./assets/icons/calendar.png" alt="calendar">
-        <img src="./assets/icons/favorite.png" alt="favorite">
-        <img src="./assets/icons/shopping-cart.png" alt="shopping-cart">
-      </div>
+      <img src="./assets/icons/user-info.png" alt="user-info">
+      <img src="./assets/icons/calendar.png" alt="calendar">
+      <img src="./assets/icons/favorite.png" alt="favorite">
+      <img src="./assets/icons/shopping-cart.png" alt="shopping-cart">
     </nav>
+    
   </header>
+
   <main>
-    <section></section>
+    <section class="bestProducts">
+      <div class="bestProducts__wrapper">
+        <img class="dellLayout" src="./assets/images/Dell.png" alt="dell">
+
+        <button class="scroll secondary">
+          <img class="scroll__img" src="./assets/icons/scroll.svg" alt="scroll">
+          Scroll to catalog
+        </button>
+
+        <div class="bestProducts__content">
+          <p>Новое поступление</p>
+          <p class="h2 bestProducts__h2">
+            Лучшие товары<br>от компании Dell
+          </p>
+          <div>
+            <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+            Подробнее
+          </div>
+        </div>
+        
+        <div class="slider">
+          <img class="slider__bestLaptop" src="./assets/images/best-laptop.png" alt="best-laptop">
+          <div class="slider__indicator">
+            <div class="slider__circle"></div>
+            <div class="slider__circle"></div>
+            <div class="slider__circle"></div>
+            <div class="slider__circle"></div>
+            <div class="slider__circle"></div>
+          </div>
+          <div>
+            <button class="slider__longArrow">
+              <img src="./assets/icons/long-arrow.svg" alt="long-arrow">
+            </button>
+          </div>
+        </div>
+        <div class="promotion">
+          <p class="h3 promotion__h3">Выгодное<br>предложение<br>от Dell</p>
+          <img class="laptopLayout" src="./assets/images/layout.png" alt="laptop">
+        </div>
+      </div>
+    </section>
+
     <section></section>
     <section></section>
   </main>

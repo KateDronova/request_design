@@ -1,6 +1,27 @@
+@mixin classicFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// @mixin columnFlex {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: start;
+// }
+
+@mixin wrapper {
+  padding-left: 260px;
+  padding-right: 260px;
+  @include classicFlex;
+  margin: auto;
+  position: relative;
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Roboto", "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   font-weight: 300px;
   color: #838383;
@@ -11,7 +32,7 @@ body {
   width: 1920px;
   margin: auto;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #000; /////!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .h2 {
@@ -37,24 +58,12 @@ button {
 }
 
 header {
-  padding-left: 260px;
-  padding-right: 260px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  position: relative;
+  @include wrapper;
   height: 123px;
 }
 
 div.bestProducts__wrapper {
-  padding-left: 260px;
-  padding-right: 260px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  position: relative;
+  @include wrapper;
   height: 100%;
   align-items: end;
   padding-bottom: 158px;
@@ -62,18 +71,14 @@ div.bestProducts__wrapper {
 }
 
 nav.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include classicFlex;
   gap: 45px;
   font-size: 15px;
   text-transform: uppercase;
 }
 
 nav.user {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include classicFlex;
   gap: 30px;
 }
 
@@ -96,9 +101,7 @@ section.bestProducts {
 }
 
 button.scroll {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include classicFlex;
   gap: 20px;
   transform: rotate(-90deg);
   margin-bottom: 70px;
@@ -161,9 +164,7 @@ div.slider {
   height: 10px;
   margin-bottom: 12px;
   margin-right: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include classicFlex();
 }
 
 .slider__circle {
@@ -185,14 +186,10 @@ div.promotion {
   right: 0;
   bottom: 0;
   z-index: -3;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include classicFlex;
 }
 
 .promotion__h3 {
   margin-left: 40px;
   margin-top: 80px;
 }
-
-/*# sourceMappingURL=style.css.map */
