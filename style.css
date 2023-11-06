@@ -1,3 +1,21 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  width: 1920px;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #FFF;
+}
+
+header, nav.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+nav.menu {
+  text-transform: uppercase;
+}
