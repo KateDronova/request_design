@@ -363,8 +363,71 @@ div.promotion {
 }
 
 .advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 260px;
+  padding-right: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: relative;
   background-color: #F2F2F2;
   height: 962px;
+}
+
+.advantages__content p {
+  text-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.advantages__container {
+  height: 290px;
+  border: 1px solid #838383;
+}
+
+.footer__nav,
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 260px;
+  padding-right: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  height: 438px;
+}
+
+.footer__nav {
+  height: 300px;
+  padding-right: 450px;
+}
+
+.footer__separateLine {
+  height: 1px;
+  margin: 0px 260px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.footer__contacts {
+  height: 140px;
+}
+
+.footer__logo {
+  width: 112px;
+  height: 112px;
+}
+
+img.footer__dellLayout {
+  position: absolute;
+  top: 133px;
+  right: 0px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */
