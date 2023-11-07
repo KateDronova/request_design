@@ -16,6 +16,7 @@
   box-sizing: border-box;
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
+  line-height: 27px;
   font-weight: 300px;
   color: #838383;
   text-wrap: nowrap;
@@ -25,7 +26,6 @@ body {
   width: 1920px;
   margin: auto;
   background-color: #fff;
-  border: 1px solid #000; /////!!!!!!!!!!!!!!!!!!!!!!!
 }
 
 .hidden {
@@ -41,17 +41,24 @@ body {
   margin-top: 0;
   font-size: 50px;
   font-weight: 400;
+  line-height: 58.59px;
   color: #292d32;
+}
+.lineHeight50 {
+  line-height: 50px;
 }
 
 .h3 {
   font-size: 25px;
   font-weight: 400;
+  line-height: 32.5px;
   color: #292d32;
 }
 
 .secondary {
   font-size: 16px;
+  font-weight: 400px;
+  color: #292d32;
 }
 
 button {
@@ -69,7 +76,7 @@ div.bestProducts__wrapper {
   height: 100%;
   align-items: end;
   padding-bottom: 158px;
-  gap: 30px;
+  gap: 32px;
 }
 
 nav.menu {
@@ -91,11 +98,12 @@ nav.user::after {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #3086C8;
+  background-color: #3086c8;
 
   content: '3';
   font-size: 12px;
   font-weight: 700;
+  line-height: 14.06px;
   text-align: center;
   color: #fff;
 }
@@ -123,7 +131,6 @@ nav.user::after {
   width: 405px;
   height: 389px;
   box-shadow: 1px 1px 45px 0px #d0d0d0;
-  
 }
 
 .userMenu::after {
@@ -154,7 +161,7 @@ nav.user::after {
   height: 70px;
   padding: 20px 30px;
   background-color: transparent;
-  border-top: 1px solid #F2F2F2;
+  border-top: 1px solid #f2f2f2;
 }
 
 .userMenu__header {
@@ -224,7 +231,7 @@ div.slider {
   flex: 1;
   gap: 60px;
   height: 100%;
-  padding-right: 100px;
+  padding-right: 104px;
 }
 
 .slider__bestLaptop {
@@ -250,6 +257,7 @@ div.slider {
 
 .slider__longArrow {
   margin-top: 55px;
+  padding: 0;
 }
 
 div.promotion {
@@ -268,38 +276,58 @@ div.promotion {
   margin-top: 80px;
 }
 
+
+
+
+
+
 .catalog {
   @include wrapper();
-  padding-top: 65px;
-  padding-bottom: 65px;
-  height: 912px;
+  padding-top: 160px;
+  padding-bottom: 178px;
+  height: 1125px;
   flex-wrap: wrap;
   gap: 35px;
+  align-content: center;
 }
 
-.catalog__content p {
-  text-wrap: wrap;
-}
-
-.catalog__productCard, .catalog__content {
+.catalog__productCard,
+.catalog__content {
   width: 440px;
   height: 371px;
   border-radius: 20px;
 }
+.catalog__content {
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 62px;
+}
 
 .catalog__productCard {
-  padding: 40px;
+  padding: 35px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
 }
 .catalog__productCard:nth-child(odd) {
-  background-color: #F2F2F2;
+  background-color: #f9f9f9;
 }
 
 .catalog__productCard:nth-child(even) {
-  background-color: #F9F9F9;
+  background-color: #f2f2f2;
+}
+
+.catalog__content .h2 {
+  margin-bottom: 10px;
+}
+
+.catalog__content p {
+  text-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .catalog__index {
@@ -311,6 +339,20 @@ div.promotion {
 }
 
 .catalog__img {
-  // bottom: 35%;
-  // right: 10%;
+  width: max-content;
+  height: auto;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.catalog .h3 {
+  margin: 8px 0px;
+}
+
+
+
+
+.advantages {
+  background-color: #F2F2F2;
+  height: 962px;
 }
