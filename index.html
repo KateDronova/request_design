@@ -24,12 +24,25 @@
     </nav>
 
     <nav class="user">
-      <img src="./assets/icons/user-info.png" alt="user-info">
+      <div id="userName" class="userName">Мария</div>
+      <img id="userInfo" src="./assets/icons/user-info.png" alt="user-info">
       <img src="./assets/icons/calendar.png" alt="calendar">
       <img src="./assets/icons/favorite.png" alt="favorite">
       <img src="./assets/icons/shopping-cart.png" alt="shopping-cart">
     </nav>
-    
+
+    <div class="userMenu hidden">
+      <div class="userMenu__header">
+        <img src="./assets/icons/user-info.png" alt="avatar">
+        Мария
+      </div>
+      <nav>
+        <div class="userMenu__item">Личный кабинет</div>
+        <div class="userMenu__item">История заказов</div>
+        <div class="userMenu__item">Персональные предложения</div>
+        <div class="userMenu__item">Выйти</div>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -79,5 +92,6 @@
     <section></section>
   </main>
   <footer></footer>
+  <script src="./script.js"></script>
 </body>
 </html>

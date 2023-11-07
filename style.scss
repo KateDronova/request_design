@@ -4,13 +4,6 @@
   align-items: center;
 }
 
-// @mixin columnFlex {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: start;
-// }
-
 @mixin wrapper {
   padding-left: 260px;
   padding-right: 260px;
@@ -33,6 +26,15 @@ body {
   margin: auto;
   background-color: #fff;
   border: 1px solid #000; /////!!!!!!!!!!!!!!!!!!!!!!!
+}
+
+.hidden {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  z-index: -5;
 }
 
 .h2 {
@@ -91,6 +93,62 @@ nav.user {
 
 .logo {
   margin-right: 15px;
+}
+
+.userMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 123px;
+  right: 319px;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 405px;
+  height: 389px;
+  box-shadow: 1px 1px 45px 0px #d0d0d0;
+  
+}
+
+.userMenu::after {
+  position: absolute;
+  top: -8px;
+  left: calc(50% - 9px);
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  background-color: #fff;
+  content: '';
+}
+
+@mixin userMenuFont {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+}
+
+.userName {
+  @include userMenuFont;
+  margin-right: -10px;
+}
+
+.userMenu__item {
+  @include userMenuFont;
+  height: 70px;
+  padding: 20px 30px;
+  background-color: transparent;
+  border-top: 1px solid #F2F2F2;
+}
+
+.userMenu__header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  @include userMenuFont;
+  padding: 30px;
+  background-color: transparent;
 }
 
 section.bestProducts {
@@ -170,7 +228,7 @@ div.slider {
 .slider__circle {
   width: 5px;
   height: 5px;
-  background-color: #D0D0D0;
+  background-color: #d0d0d0;
   border-radius: 50%;
 }
 
