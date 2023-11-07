@@ -84,6 +84,22 @@ nav.user {
   gap: 30px;
 }
 
+nav.user::after {
+  position: absolute;
+  top: 36px;
+  right: 260px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #3086C8;
+
+  content: '3';
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+}
+
 .menu__item a {
   font-size: 15px;
   text-decoration: none;
@@ -250,4 +266,51 @@ div.promotion {
 .promotion__h3 {
   margin-left: 40px;
   margin-top: 80px;
+}
+
+.catalog {
+  @include wrapper();
+  padding-top: 65px;
+  padding-bottom: 65px;
+  height: 912px;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.catalog__content p {
+  text-wrap: wrap;
+}
+
+.catalog__productCard, .catalog__content {
+  width: 440px;
+  height: 371px;
+  border-radius: 20px;
+}
+
+.catalog__productCard {
+  padding: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.catalog__productCard:nth-child(odd) {
+  background-color: #F2F2F2;
+}
+
+.catalog__productCard:nth-child(even) {
+  background-color: #F9F9F9;
+}
+
+.catalog__index {
+  font-size: 25px;
+  font-weight: 100;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.catalog__img {
+  // bottom: 35%;
+  // right: 10%;
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "index": "01",
+    "title": "Ноутбуки",
+    "amount": "105 товаров",
+    "imgSrc": "./assets/images/catalog-laptops.png"
+  },
+  {
+    "index": "02",
+    "title": "Персональные компьютеры",
+    "amount": "65 товаров",
+    "imgSrc": "./assets/images/catalog-desktops.png"
+  },
+  {
+    "index": "03",
+    "title": "Cерверы",
+    "amount": "13 товаров",
+    "imgSrc": "./assets/images/catalog-servers.png"
+  },
+  {
+    "index": "04",
+    "title": "Dell EMC",
+    "amount": "2345 товаров",
+    "imgSrc": "./assets/images/catalog-EMC.png"
+  },
+  {
+    "index": "05",
+    "title": "Запасные части к Dell EMC",
+    "amount": "195 товаров",
+    "imgSrc": "./assets/images/catalog-spares.png"
+  }
+]
