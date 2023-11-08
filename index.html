@@ -8,11 +8,14 @@
   <link rel="stylesheet" href="./style.css">
   <link href="https://db.onlinewebfonts.com/c/0033a2fbc0329740fb86c1cfd134cb94?family=Roboto" rel="stylesheet"
     type="text/css" />
+  <link href="https://db.onlinewebfonts.com/c/87b352a61cb00dd358310b1117e633f3?family=Euclid+Circular+A"
+    rel="stylesheet" type="text/css" />
+  <link href="https://db.onlinewebfonts.com/c/a575313c6dc4fd00c1a9506e1c3ea4fc?family=Euclid+Circular+A"
+    rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-  <header>
+  <header class="header">
 
     <nav class="menu">
       <img class="logo" src="./assets/images/logo.png" alt="request_design_logo">
@@ -46,6 +49,7 @@
         <div class="userMenu__item">Выйти</div>
       </nav>
     </div>
+
   </header>
 
   <main>
@@ -103,20 +107,75 @@
     </section>
 
     <section class="advantages">
-      <img src="./assets/images/benefits.png" alt="laptop">
-      <div class="advantages__content">
-        <p class="h2 lineHeight50">Наши преимущества</p>
-        <p>Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены
-          по сравнению с конкурентами</p>
-        <div class="secondary">
-          <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
-          &ensp;Оставить заявку
+      <div class="advantages__main">
+        <img src="./assets/images/benefits.png" alt="laptop">
+        <div class="advantages__content">
+          <p class="h2 lineHeight50">Наши преимущества</p>
+          <p>Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены
+            по сравнению с конкурентами</p>
+          <div class="secondary">
+            <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+            &ensp;Оставить заявку
+          </div>
         </div>
       </div>
-      <div class="advantages__container"></div>
+      <img class="advantages__layout" src="./assets/images/best-quality.png" alt="best-quality">
+      <div class="advantages__container">
+
+        <div class="advantages__card">
+          <img src="./assets/icons/corner-for-card.png" alt="corner-for-card">
+          <div class="advantages__icon">
+            <img src="./assets/icons/benefits-card.png" alt="benefits-card">
+          </div>
+          <p class="blackCardH3">Самые выгодные<br> и низкие цены</p>
+          <p class="blackCardSecondary">В наличии широкий ассортимент, а также доступные цены на ноутбуки Dell</p>
+        </div>
+
+        <div class="advantages__card">
+          <img src="./assets/icons/corner-for-card.png" alt="corner-for-card">
+          <div class="advantages__icon">
+            <img src="./assets/icons/benefits-certif.png" alt="benefits-card">
+          </div>
+          <p class="blackCardH3">Авторизованный сервисный центр DELL</p>
+          <p class="blackCardSecondary">Сертифицированный сервисный центр по ремонту техники Dell в России и странах СНГ</p>
+        </div>
+
+        <div class="advantages__card">
+          <img src="./assets/icons/corner-for-card.png" alt="corner-for-card">
+          <div class="advantages__icon">
+            <img src="./assets/icons/benefits-people.png" alt="benefits-card">
+          </div>
+          <p class="blackCardH3">Высокий уровень технической экспертизы</p>
+          <p class="blackCardSecondary">Мы прошли аттестацию в виде тестирования, где показали высокий уровень знаний</p>
+        </div>
+
+        <div class="advantages__card">
+          <img src="./assets/icons/corner-for-card.png" alt="corner-for-card">
+          <div class="advantages__icon">
+            <img src="./assets/icons/benefits-cube.png" alt="benefits-card">
+          </div>
+          <p class="blackCardH3">Официальный партнер DELL</p>
+          <p class="blackCardSecondary">Официальный поставщик продукции DELL в России и странах СНГ</p>
+        </div>
+      </div>
     </section>
 
-    <section class="news"></section>
+    <section class="news">
+      <header class="news__header">
+        <div>
+          <p class="h2">Последние новости</p>
+          <p>Вы можете посмотреть ещё больше интересных новостей и узнать о последних<br> новинках, перейдя по кнопке</p>
+        </div>
+        <div class="secondary">
+          Все новости &ensp;
+          <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+        </div>
+      </header>
+      <main class="news__main">
+
+      </main>
+    </section>
+
     <section class="contacts"></section>
   </main>
 
@@ -125,26 +184,26 @@
       <img class="footer__logo" src="./assets/images/logo.png" alt="request_design_logo">
       <nav class="footer__catalog">
         <div class="h3">Каталог</div>
-        <div class="secondary">Ноутбуки</div>
-        <div class="secondary">Персональные компьютеры</div>
-        <div class="secondary">Серверы</div>
-        <div class="secondary">Dell EMC</div>
-        <div class="secondary">Запасные части к Dell EMC</div>
+        <div class="footer__item"><a class="secondary" href="#">Ноутбуки</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Персональные компьютеры</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Серверы</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Dell EMC</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Запасные части к Dell EMC</a></div>
       </nav>
       <nav class="footer__user">
         <div class="h3">Личный кабинет</div>
-        <div class="secondary">Профиль</div>
-        <div class="secondary">История заказов</div>
-        <div class="secondary">SMS-уведомления</div>
-        <div class="secondary">Избранное</div>
-        <div class="secondary">Сравнение товаров</div>
+        <div class="footer__item"><a class="secondary" href="#">Профиль</a></div>
+        <div class="footer__item"><a class="secondary" href="#">История заказов</a></div>
+        <div class="footer__item"><a class="secondary" href="#">SMS-уведомления</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Избранное</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Сравнение товаров</a></div>
       </nav>
       <nav class="footer__help">
         <div class="h3">Помощь</div>
-        <div class="secondary">Доставка и оплата</div>
-        <div class="secondary">Контакты</div>
-        <div class="secondary">FAQ</div>
-        <div class="secondary">Наш АСЦ</div>
+        <div class="footer__item"><a class="secondary" href="#">Доставка и оплата</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Контакты</a></div>
+        <div class="footer__item"><a class="secondary" href="#">FAQ</a></div>
+        <div class="footer__item"><a class="secondary" href="#">Наш АСЦ</a></div>
       </nav>
       <img class="footer__dellLayout" src="./assets/images/Dell-footer.png" alt="Dell">
     </main>
@@ -153,20 +212,20 @@
 
     <footer class="footer__contacts">
       <div>
-        <p class="secondary">Адрес</p>
-        Москва, ул. 3-я Хорошевская, дом 2, строение 1
+        <p class="secondary gray">Адрес</p>
+        <p class="black">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
       </div>
       <div>
-        <p class="secondary">Телефон</p>
-        +7 495 737-06-01, +7 495 737-06-01
+        <p class="secondary gray">Телефон</p>
+        <p class="black">+7 495 737-06-01, +7 495 737-06-01</p>
       </div>
       <div>
-        <p class="secondary">E-mail</p>
-        dell_ru@gmail.com
+        <p class="secondary gray">E-mail</p>
+        <p class="black">dell_ru&#64;gmail.com</p>
       </div>
       <div class="media">
-        <img src="./assets/icons/facebook.svg" alt="facebook">
-        <img src="./assets/icons/whatsapp.svg" alt="whatsapp">
+        <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+        <a href="#"><img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
       </div>
     </footer>
   </footer>

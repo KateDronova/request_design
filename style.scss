@@ -7,7 +7,6 @@
 @mixin wrapper {
   padding-left: 260px;
   padding-right: 260px;
-  @include classicFlex;
   margin: auto;
   position: relative;
 }
@@ -61,18 +60,38 @@ body {
   color: #292d32;
 }
 
+.blackCardH3,
+.blackCardSecondary {
+  font-family: 'Euclid Circular A', Arial Bold, sans-serif;
+}
+.blackCardH3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.9px;
+  color: #fff;
+  margin: 26px 0 -3px 0;
+}
+.blackCardSecondary {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20.29px;
+  color: #b7b7b7;
+}
+
 button {
   border: none;
   background-color: transparent;
 }
 
-header {
+.header {
   @include wrapper;
+  @include classicFlex();
   height: 123px;
 }
 
 div.bestProducts__wrapper {
   @include wrapper;
+  @include classicFlex();
   height: 100%;
   align-items: end;
   padding-bottom: 158px;
@@ -276,13 +295,9 @@ div.promotion {
   margin-top: 80px;
 }
 
-
-
-
-
-
 .catalog {
   @include wrapper();
+  @include classicFlex();
   padding-top: 160px;
   padding-bottom: 178px;
   height: 1125px;
@@ -312,12 +327,27 @@ div.promotion {
   flex-direction: column;
   justify-content: end;
 }
+
 .catalog__productCard:nth-child(odd) {
   background-color: #f9f9f9;
 }
-
 .catalog__productCard:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+.catalog__productCard:nth-child(2) .catalog__img {
+  margin-left: -25px;
+  margin-bottom: 26px;
+}
+.catalog__productCard:nth-child(3) .catalog__img {
+  margin-left: 75px;
+}
+.catalog__productCard:nth-child(4) .catalog__img {
+  margin-left: 13px;
+}
+.catalog__productCard:nth-child(6) .catalog__img {
+  margin-bottom: 6px;
+  margin-left: 46px;
 }
 
 .catalog__content .h2 {
@@ -342,68 +372,169 @@ div.promotion {
   width: max-content;
   height: auto;
   margin-left: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 11%;
 }
 
 .catalog .h3 {
   margin: 8px 0px;
 }
 
-
-
-
-
 .advantages {
-  @include classicFlex();
   @include wrapper();
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   height: 962px;
 }
 
+.advantages__main {
+  @include classicFlex();
+  padding-top: 86px;
+  padding-bottom: 48px;
+}
+.advantages__main > img {
+  margin-left: -78px;
+  z-index: 2;
+}
+
+.advantages__content {
+  height: 265px;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px auto 38px 8px;
+}
 .advantages__content p {
   text-wrap: wrap;
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.advantages__container {
-  height: 290px;
-  border: 1px solid #838383;
+.advantages__layout {
+  position: absolute;
+  left: 10px;
+  top: 162px;
 }
 
+.advantages__container {
+  height: 290px;
+  @include classicFlex();
+}
+.advantages__card {
+  position: relative;
+  background-color: #292d32;
+  border-radius: 18px;
+  padding: 30px;
+  padding-bottom: 38px;
+  max-width: 330px;
+  height: 100%;
+}
+.advantages__card p {
+  text-wrap: wrap;
+}
+.advantages__card > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.advantages__icon {
+  background-color: #343a41;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  padding: 16px;
+}
+
+
+
+
+.news {
+  height: 1328px;
+  border-bottom: 1px solid #000; ////////////!!!!!!!!!!!!!!
+  padding-top: 172px;
+  padding-bottom: 176px;
+}
+.news__header {
+  @include wrapper();
+  @include classicFlex();
+  align-items: start;
+  height: 208px;
+}
+.news__header .h2 {
+  margin-bottom: 26px;
+}
+.news__header .secondary {
+  margin-top: 8px;
+}
+.news__main {
+  // height: 768px;
+  border: 1px solid #000; ////////////!!!!!!!!!!!!!!
+  column-gap: 65px;
+  row-gap: 40px;
+}
 
 
 
 
 .footer__nav,
 .footer__contacts {
-  @include classicFlex();
   @include wrapper();
+  @include classicFlex();
   height: 438px;
 }
 .footer__nav {
   height: 300px;
-  padding-right: 450px;
+  padding: 60px 450px 60px 260px;
+  align-items: start;
 }
 
 .footer__separateLine {
   height: 1px;
   margin: 0px 260px;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 }
 
 .footer__contacts {
   height: 140px;
 }
+.footer__contacts p {
+  margin: 0;
+  margin-bottom: 6px;
+}
 
 .footer__logo {
   width: 112px;
   height: 112px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  align-self: center;
 }
 
 img.footer__dellLayout {
   position: absolute;
-  top: 133px;
+  top: 150px;
   right: 0px;
   z-index: -1;
+}
+
+.footer .h3 {
+  padding-bottom: 7px;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer__item {
+  margin-top: 1px;
+}
+
+.media {
+  width: 94px;
+  @include classicFlex();
+}
+
+.black {
+  color: #292D32;
+}
+
+.gray {
+  color: #838383;
 }
