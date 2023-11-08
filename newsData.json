@@ -2,37 +2,43 @@
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-1.jpg"
   },
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-2.jpg"
   },
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-3.jpg"
   },
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-4.jpg"
   },
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-5.jpg"
   },
   {
     "title": "GE использует технологии Dell",
     "description": "Вы можете посмотреть ещё больше интересных",
-    "date": "11 июля",
+    "day": "11",
+    "month": "июля",
     "imgSrc": "./assets/images/news-6.jpg"
   }
 ]

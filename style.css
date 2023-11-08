@@ -506,9 +506,91 @@ div.promotion {
 }
 
 .news__main {
-  border: 1px solid #000;
-  column-gap: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 260px;
+  padding-right: 260px;
+  margin: auto;
+  position: relative;
+  flex-wrap: wrap;
   row-gap: 40px;
+}
+
+.news__card {
+  position: relative;
+  width: 415px;
+  height: 364px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  margin-right: 25px;
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.0470588235);
+}
+
+.news__img {
+  border-top-left-radius: 45px;
+}
+
+.news__supportingImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom-right-radius: 45px;
+}
+
+.news__supportingImg2 {
+  position: absolute;
+  bottom: 87px;
+  right: 12px;
+  z-index: 2;
+}
+
+.news__title {
+  font-weight: 700;
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+  right: 100px;
+  z-index: 3;
+  text-wrap: wrap;
+}
+
+.news__decription {
+  position: absolute;
+  bottom: 28px;
+  left: 30px;
+  z-index: 3;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  color: #292D32;
+}
+
+button.news__readMore {
+  position: absolute;
+  bottom: 65px;
+  right: 25px;
+  z-index: 3;
+  width: 67px;
+  height: 67px;
+  background-color: #292D32;
+  border: 12px solid #FFF;
+  border-radius: 50%;
+}
+
+.news__date {
+  position: absolute;
+  top: 62px;
+  right: -25px;
+  width: 50px;
+  height: 97px;
+  padding: 18px 0;
+  text-align: center;
+  color: #292D32;
+  border-radius: 15px;
+  background-color: #FFF;
+  z-index: 3;
 }
 
 .footer__nav,
