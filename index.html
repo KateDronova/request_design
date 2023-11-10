@@ -172,11 +172,67 @@
         </div>
       </header>
       <main class="news__main">
-        <button class="news__readMore"><img src="./assets/icons/→.svg" alt="read-much"></button>
       </main>
     </section>
 
-    <section class="contacts"></section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        
+        <div class="contacts__content">
+          <div>
+            <p class="h2 lineHeight50">Наши контакты</p>
+            <p class="secondary">Вы можете связаться с нашим онлайн-консультантом</p>
+          </div>
+          <div>
+            <p class="secondary gray"><img src="./assets/icons/contacts-location.svg" alt="our-location">&emsp;Адрес</p>
+            <p class="black">Москва, ул. 3-я Хорошевская, дом 2, строение 1</p>
+          </div>
+          <div>
+            <p class="secondary gray"><img src="./assets/icons/contacts-phone.svg" alt="call-us">&emsp;Телефон</p>
+            <p class="black">+7 495 737-06-01<br> +7 495 737-06-01</p>
+          </div>
+          <div>
+            <p class="secondary gray"><img src="./assets/icons/contacts-mail.svg" alt="our-mail">&emsp;E-mail</p>
+            <p class="black">dell_ru&#64;gmail.com</p>
+          </div>
+          <div class="media">
+            <a href="#"><img src="./assets/icons/facebook.svg" alt="facebook"></a>
+            <a href="#"><img src="./assets/icons/whatsapp.svg" alt="whatsapp"></a>
+          </div>
+          <img class="contacts__img" src="./assets/images/iphone.png" alt="iphone-13-pro">
+        </div>
+
+        <form class="application">
+        <!-- <form class="application" onsubmit="validateForm()"> -->
+          <div class="application__header">
+            <p class="h2 lineHeight50 white">Оставьте заявку</p>
+            <p class="secondary white">Оставьте свой номер, и мы перезвоним Вам.</p>
+          </div>
+
+          <div class="layoutForLabel">
+            <label for="name">Ваше имя</label>
+          </div>
+          <input id="name" name="name" type="text" pattern="[a-z,A-Z,а-я,А-Я]{2,15}" required>
+
+          <div class="layoutForLabel">
+            <label for="phoneNumber">Номер телефона</label>
+          </div>
+          <input id="phoneNumber" name="phoneNumber" type="tel" pattern="^\+?[0-9]{1,3}[\-\.\s]?\(?[0-9]{3}\)?[\-\.\s]?[0-9]{3}[\-\.\s]?[0-9]{2}[\-\.\s]?[0-9]{2}?$" required>
+
+          <div class="layoutForLabel">
+            <label for="comment">Комментарий</label>
+          </div>
+          <textarea id="comment" name="comment" rows="4"></textarea>
+
+          <div class="application__button secondary white">
+            <button id="applyButton" type="submit" class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+            &ensp;Заказать
+          </div>
+        </form>
+
+      </div>
+      <img class="contactsLayout" src="./assets/images/our-contacts.png" alt="our-contacts">
+    </section>
   </main>
 
   <footer class="footer">

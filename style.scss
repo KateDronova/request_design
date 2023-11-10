@@ -16,7 +16,7 @@
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 300px;
+  font-weight: 300;
   color: #838383;
   text-wrap: nowrap;
 }
@@ -449,7 +449,6 @@ div.promotion {
 
 .news {
   height: 1328px;
-  border-bottom: 1px solid #000; ////////////!!!!!!!!!!!!!!
   padding-top: 172px;
   padding-bottom: 176px;
 }
@@ -532,14 +531,122 @@ button.news__readMore {
   right: -25px;
   width: 50px;
   height: 97px;
-  padding: 18px 0;
   text-align: center;
-  color: #292D32;
   border-radius: 15px;
   background-color: #FFF;
   z-index: 3;
 }
+.news__dateDay {
+  font-size: 20px;
+  font-weight: 900;
+  color: #292D32;
+  line-height: 23.44px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+.news__dateMonth {
+  font-size: 10px;
+  font-weight: 300;
+  color: #292D32;
+  line-height: 11.72px;
+}
 
+
+.contacts {
+  position: relative;
+  height: 1022px;
+}
+.contacts::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 676px;
+  width: 100%;
+  background-color: #EEE;
+  content: '';
+}
+
+.contacts__wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 260px;
+  height: 842px;
+  width: 1400px;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  z-index: 3;
+}
+
+.contacts .h2 {
+  margin-bottom: 20px;
+}
+
+.contacts__content,
+.application {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  position: relative;
+  padding: 100px;
+}
+
+.contacts__img {
+  position: absolute;
+  right: -87px;
+  top: 142px;
+}
+
+.application {
+  padding: 100px 135px 100px 128px;
+  background-color: #292D32;
+  color: #FFF;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.application__button {
+  margin-top: 45px;
+}
+
+.application__header {
+  margin-bottom: -10px;
+}
+
+input, 
+textarea {
+  border: 1.5px solid #F2F2F280;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 15px;
+  color: #FFF;
+  // &:invalid {
+  //   border-color: #7b1515;
+  // }
+}
+textarea {
+  padding: 17px 15px;
+}
+
+.layoutForLabel {
+  position: relative;
+  top: 28px;
+  left: 22px;
+  width: max-content;
+  padding: 0 5px;
+  color: #F2F2F2;
+  background-color: #292D32;
+}
+
+.contactsLayout {
+  position: absolute;
+  bottom: 55px;
+  left: 12px;
+  z-index: 2;
+}
 
 
 .footer__nav,
@@ -604,4 +711,8 @@ img.footer__dellLayout {
 
 .gray {
   color: #838383;
+}
+
+.white {
+  color: #FFF;
 }
