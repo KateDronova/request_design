@@ -1,0 +1,67 @@
+.advantages {
+  background-color: #f2f2f2;
+  height: 962px;
+}
+
+.advantages__main {
+  padding-top: 86px;
+  padding-bottom: 48px;
+}
+
+.advantages__main > img {
+  margin-left: -78px;
+  z-index: 2;
+}
+
+.advantages__content {
+  height: 265px;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px auto 38px 8px;
+}
+
+.advantages__content p {
+  text-wrap: wrap;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.advantages__layout {
+  position: absolute;
+  left: 10px;
+  top: 162px;
+}
+
+.advantages__container {
+  height: 290px;
+}
+
+.advantages__card {
+  position: relative;
+  background-color: #292d32;
+  border-radius: 18px;
+  padding: 30px;
+  padding-bottom: 38px;
+  max-width: 330px;
+  height: 100%;
+}
+
+.advantages__card p {
+  text-wrap: wrap;
+}
+
+.advantages__card > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.advantages__icon {
+  background-color: #343a41;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  padding: 16px;
+}

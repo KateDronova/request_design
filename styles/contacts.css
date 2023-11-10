@@ -1,0 +1,94 @@
+.contacts {
+  position: relative;
+  height: 1022px;
+}
+
+.contacts::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 676px;
+  width: 100%;
+  background-color: #eee;
+  content: '';
+}
+
+.contacts__wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 260px;
+  height: 842px;
+  width: 1400px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  z-index: 3;
+}
+
+.contacts .h2 {
+  margin-bottom: 20px;
+}
+
+.contacts__content,
+.application {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  position: relative;
+  padding: 100px;
+}
+
+.contacts__img {
+  position: absolute;
+  right: -87px;
+  top: 142px;
+}
+
+.application {
+  padding: 100px 135px 100px 128px;
+  background-color: #292d32;
+  color: #fff;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.application__button {
+  margin-top: 45px;
+}
+
+.application__header {
+  margin-bottom: -10px;
+}
+
+input,
+textarea {
+  border: 1.5px solid #f2f2f280;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 15px;
+  color: #fff;
+}
+
+textarea {
+  padding: 17px 15px;
+}
+
+.layoutForLabel {
+  position: relative;
+  top: 28px;
+  left: 22px;
+  width: max-content;
+  padding: 0 5px;
+  color: #f2f2f2;
+  background-color: #292d32;
+}
+
+.contactsLayout {
+  position: absolute;
+  bottom: 55px;
+  left: 12px;
+  z-index: 2;
+}

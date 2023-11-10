@@ -1,0 +1,52 @@
+.footer__nav,
+.footer__contacts {
+  height: 438px;
+}
+
+.footer__nav {
+  height: 300px;
+  padding: 60px 450px 60px 260px;
+  align-items: start;
+}
+
+.footer__separateLine {
+  height: 1px;
+  margin: 0px 260px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__contacts {
+  height: 140px;
+}
+
+.footer__contacts p {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.footer__logo {
+  width: 112px;
+  height: 112px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  align-self: center;
+}
+
+img.footer__dellLayout {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  z-index: -1;
+}
+
+.footer .h3 {
+  padding-bottom: 7px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__item {
+  margin-top: 1px;
+}

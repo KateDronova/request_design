@@ -1,0 +1,98 @@
+.bestProducts__wrapper {
+  height: 100%;
+  align-items: end;
+  padding-bottom: 158px;
+  gap: 32px;
+}
+
+section.bestProducts {
+  background-color: #f2f2f2;
+  height: 683px;
+  position: relative;
+  z-index: -3;
+}
+
+button.scroll {
+  gap: 20px;
+  transform: rotate(-90deg);
+  margin-bottom: 70px;
+  margin-left: -75px;
+}
+
+.scroll .scroll__img {
+  transform: rotate(90deg);
+}
+
+.bestProducts__content {
+  width: 400px;
+  gap: 20px;
+}
+
+.bestProducts__h2 {
+  margin-bottom: 60px;
+}
+
+img.dellLayout {
+  position: absolute;
+  left: 260px;
+  top: 97px;
+  z-index: -1;
+}
+
+img.laptopLayout {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+div.slider {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  position: relative;
+  flex: 1;
+  gap: 60px;
+  height: 100%;
+  padding-right: 104px;
+}
+
+.slider__bestLaptop {
+  position: absolute;
+  top: 75px;
+  left: -25px;
+}
+
+.slider__indicator {
+  width: 70px;
+  height: 10px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+}
+
+.slider__circle {
+  width: 5px;
+  height: 5px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+}
+
+.slider__longArrow {
+  margin-top: 55px;
+  padding: 0;
+}
+
+div.promotion {
+  background-color: #f9f9f9;
+  height: 100%;
+  width: 510px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
+.promotion__h3 {
+  margin-left: 40px;
+  margin-top: 80px;
+}
