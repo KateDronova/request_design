@@ -29,6 +29,12 @@ body {
   align-items: center;
 }
 
+.flexStart {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .wrapper {
   padding-left: 260px;
   padding-right: 260px;
