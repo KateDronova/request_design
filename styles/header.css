@@ -1,5 +1,6 @@
 .header {
   height: 123px;
+  z-index: 5;
 }
 
 nav.menu {
@@ -93,4 +94,109 @@ nav.user::after {
   gap: 20px;
   padding: 30px;
   background-color: transparent;
+}
+
+div.shadow {
+  position: fixed;
+  width: 100%;
+  height: calc(100% - 90px);
+  top: 90px;
+  left: 0vh;
+  background-color: #000;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+.burger__menu {
+  position: absolute;
+  background-color: #FFF;
+  width: 375px;
+  height: 390px;
+  top: 90px;
+  right: 0;
+  padding: 56px 257px 64px 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.burger__menuItem {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.burger__menuItem a {
+  text-decoration: none;
+  color: #292D32;
+}
+
+.burger {
+  display: none;
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}
+
+.burger__hr {
+  border: 1.5px solid #292d32;
+  transition: 300ms ease-out;
+}
+
+.swipe {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.rotateTopLine {
+  transform: rotate(45deg) translate(6px, 6.5px);
+}
+
+.rotateBottomLine {
+  transform: rotate(-45deg) translateY(0px);
+}
+
+@media (width < 380px) {
+  .header {
+    height: 90px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu__item {
+    display: none;
+  }
+
+  .user img {
+    width: 46px;
+    height: 46px;
+  }
+
+  #userCalendar,
+  #userFavourite {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 46px;
+    height: 46px;
+    padding: 6px 14px;
+  }
+
+  nav.user::after {
+    top: 20px;
+    right: 90px;
+  }
+
+  .userName {
+    display: none;
+  }
 }

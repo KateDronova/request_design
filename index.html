@@ -23,6 +23,8 @@
 
 <body>
   <header class="header classicFlex wrapper">
+    
+    <div class="shadow hidden"></div>
 
     <nav class="menu classicFlex">
       <img class="logo" src="./assets/images/logo.png" alt="request_design_logo">
@@ -39,10 +41,23 @@
     <nav class="user classicFlex">
       <div id="userName" class="userName">Мария</div>
       <img id="userInfo" src="./assets/icons/user-info.png" alt="user-info">
-      <img src="./assets/icons/calendar.png" alt="calendar">
-      <img src="./assets/icons/favorite.png" alt="favorite">
+      <img id="userCalendar" src="./assets/icons/calendar.png" alt="calendar">
+      <img id="userFavourite" src="./assets/icons/favorite.png" alt="favorite">
       <img src="./assets/icons/shopping-cart.png" alt="shopping-cart">
+      <div class="burger">
+        <hr class="burger__hr burger__hr_top">
+        <hr class="burger__hr burger__hr_middle">
+        <hr class="burger__hr burger__hr_bottom">
+      </div>
     </nav>
+    
+    <div class="burger__menu hidden">
+      <div class="burger__menuItem"><a href="#">Главная</a></div>
+      <div class="burger__menuItem"><a href="#">Каталог</a></div>
+      <div class="burger__menuItem"><a href="#">Новости</a></div>
+      <div class="burger__menuItem"><a href="#">Наш АЦС</a></div>
+      <div class="burger__menuItem"><a href="#">Контакты</a></div>
+    </div>
 
     <div class="userMenu hidden">
       <div class="userMenu__header">

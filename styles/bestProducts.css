@@ -109,11 +109,11 @@ div.promotion {
     opacity: 0.1;
   }
   10% {
-    transform: translateX(50px);
+    transform: translateX(-50px);
     opacity: 0;
   }
   40% {
-    transform: translateX(-50px);
+    transform: translateX(50px);
     opacity: 0;
   }
   100% {
