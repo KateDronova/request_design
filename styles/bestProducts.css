@@ -3,13 +3,13 @@
   align-items: end;
   padding-bottom: 158px;
   gap: 32px;
+  z-index: 2;
 }
 
 section.bestProducts {
   background-color: #f2f2f2;
   height: 683px;
   position: relative;
-  z-index: -3;
 }
 
 button.scroll {
@@ -57,7 +57,7 @@ div.slider {
   padding-right: 104px;
 }
 
-.slider__bestLaptop {
+.slider__bestProduct {
   position: absolute;
   top: 75px;
   left: -25px;
@@ -67,7 +67,7 @@ div.slider {
   width: 70px;
   height: 10px;
   margin-bottom: 12px;
-  margin-right: 10px;
+  margin-right: 18px;
 }
 
 .slider__circle {
@@ -75,10 +75,16 @@ div.slider {
   height: 5px;
   background-color: #d0d0d0;
   border-radius: 50%;
+  &.active {
+    width: 9px;
+    height: 9px;
+    background-color: #292D32;
+  }
 }
 
 .slider__longArrow {
   margin-top: 55px;
+  margin-bottom: -3px;
   padding: 0;
 }
 
@@ -95,4 +101,23 @@ div.promotion {
 .promotion__h3 {
   margin-left: 40px;
   margin-top: 80px;
+}
+
+@keyframes switchSlider {
+  0% {
+    transform: translateX(0px);
+    opacity: 0.1;
+  }
+  10% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  40% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }

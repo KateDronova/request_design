@@ -1,13 +1,3 @@
-const userButton = document.getElementById('userInfo');
-const userMenu = document.querySelector('.userMenu');
-
-userButton.addEventListener('mouseover', () => {
-  userMenu.classList.remove('hidden');
-});
-userButton.addEventListener('mouseout', () => {
-  userMenu.classList.add('hidden');
-});
-
 function createElementWithClass(parentElem, tag, className, content) {
   const elem = document.createElement(tag);
   elem.classList.add(className);
@@ -36,6 +26,7 @@ fetch('./productCardsInfo.json')
       createElementWithClass(card, 'p', 'h3', item.title);
     })
   );
+
 fetch('./newsData.json')
   .then((response) => response.json())
   .then((data) =>

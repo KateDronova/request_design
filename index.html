@@ -31,7 +31,7 @@
       <div class="menu__item"><a href="#">Новости</a></div>
       <div class="menu__item"><a href="#">Наш АЦС</a></div>
       <div class="menu__item"><a href="#">Контакты</a></div>
-      <button>
+      <button type="button">
         <img src="./assets/icons/magnifying-glass.svg" alt="magnifying_glass">
       </button>
     </nav>
@@ -65,7 +65,7 @@
       <div class="bestProducts__wrapper classicFlex wrapper">
         <img class="dellLayout" src="./assets/images/Dell.png" alt="dell">
 
-        <button class="scroll secondary classicFlex">
+        <button type="button" class="scroll secondary classicFlex">
           <img class="scroll__img" src="./assets/icons/scroll.svg" alt="scroll">
           Scroll to catalog
         </button>
@@ -76,25 +76,23 @@
             Лучшие товары<br>от компании Dell
           </p>
           <div class="secondary">
-            <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+            <button type="button" class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
             &ensp;Подробнее
           </div>
         </div>
 
         <div class="slider">
-          <img class="slider__bestLaptop" src="./assets/images/best-laptop.png" alt="best-laptop">
+          <img class="slider__bestProduct" src="./assets/images/best-laptop.png" alt="best-laptop">
           <div class="slider__indicator classicFlex">
-            <div class="slider__circle"></div>
+            <div class="slider__circle active"></div>
             <div class="slider__circle"></div>
             <div class="slider__circle"></div>
             <div class="slider__circle"></div>
             <div class="slider__circle"></div>
           </div>
-          <div>
-            <button class="slider__longArrow">
-              <img src="./assets/icons/long-arrow.svg" alt="long-arrow">
-            </button>
-          </div>
+          <button type="button" class="slider__longArrow">
+            <img src="./assets/icons/long-arrow.svg" alt="long-arrow">
+          </button>
         </div>
         <div class="promotion classicFlex">
           <p class="h3 promotion__h3">Выгодное<br>предложение<br>от Dell</p>
@@ -108,7 +106,7 @@
         <p class="h2 lineHeight50">Каталог товаров от Dell</p>
         <p>Наша компания является зарегистрированным и официальным партнером Dell в России.</p>
         <div class="secondary">
-          <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+          <button type="button" class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
           &ensp;В каталог
         </div>
       </div>
@@ -123,7 +121,7 @@
           <p>Оптимизация мощностей (расходов, социальных выплат и т.п.) позволили компании на 4,7% понизить цены
             по сравнению с конкурентами</p>
           <div class="secondary">
-            <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+            <button type="button" class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
             &ensp;Оставить заявку
           </div>
         </div>
@@ -183,7 +181,7 @@
         </div>
         <div class="secondary">
           Все новости &ensp;
-          <button class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
+          <button type="button" class="readMoreButton"><img src="./assets/icons/→.svg" alt="read-much"></button>
         </div>
       </header>
 
@@ -307,7 +305,9 @@
 
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./scripts/cards.js"></script>
+  <script src="./scripts/popups.js"></script>
+  <script src="./scripts/slider.js"></script>
 </body>
 
 </html>
