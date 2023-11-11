@@ -17,7 +17,7 @@
 
 .advantages__content {
   height: 265px;
-  width: 520px;
+  max-width: 520px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -74,10 +74,18 @@
     height: 1546px;
   }
 
+  .advantages__content {
+    height: auto;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
   .advantages__card {
     border-radius: 10px;
     padding: 15px;
     padding-right: 20px;
+    width: auto;
+    height: 212px;
   }
 
   .advantages__card p.blackCardSecondary {
@@ -98,15 +106,32 @@
     height: 50px;
     padding: 10px;
   }
+  .advantages__icon img {
+    width: 30px;
+    height: 30px;
+  }
   
   .advantages__main {
     flex-direction: column-reverse;
+    padding-top: 106px;
+    margin-bottom: 92px;
   }
   
   .advantages__main > img {
     height: 194px;
+    position: absolute;
+    right: -10px;
+    top: 282px;
   }
+
   .advantages__container {
     flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .advantages__layout {
+    top: 373px;
+    left: 14px;
   }
 }

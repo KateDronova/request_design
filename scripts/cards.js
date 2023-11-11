@@ -29,15 +29,15 @@ fetch('./productCardsInfo.json')
 
 fetch('./newsData.json')
   .then((response) => response.json())
-  .then((data) =>
+  .then((data) => {
+    if (document.body.clientWidth < 425) {
+      data.length = 3;
+    }
     data.map((item) => {
       const container = document.querySelector('.news__main');
       const card = createElementWithClass(container, 'div', 'news__card');
 
-      createElementWithClass(card, 'img', 'news__img').setAttribute(
-        'src',
-        item.imgSrc
-      );
+      createElementWithClass(card, 'div', 'news__img').style.backgroundImage = `url(${item.imgSrc})`;
       createElementWithClass(card, 'img', 'news__supportingImg').setAttribute(
         'src',
         './assets/images/supporting1.png'
@@ -60,5 +60,5 @@ fetch('./newsData.json')
       const dateContainer = createElementWithClass(card, 'div', 'news__date');
       createElementWithClass(dateContainer, 'p', 'news__dateDay', item.day);
       createElementWithClass(dateContainer, 'p', 'news__dateMonth', item.month);
-    })
-  );
+    });
+  });

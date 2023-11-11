@@ -93,16 +93,44 @@
     padding-top: 120px;
     padding-bottom: 120px;
     align-content: center;
+    gap: 21px;
   }
 
-  .catalog__productCard {
+  .catalog__content {
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .catalog__content .h2 {
+    margin-right: 80px;
+    margin-bottom: 20px;
+  }
+
+  .catalog div.catalog__productCard {
     width: 345px;
+    height: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #EEEEEE;
+  }
+  div.catalog__productCard:nth-child(2) {
     height: 275px;
   }
 
   .catalog__index {
     font-size: 20px;
     line-height: 30px;
+    top: 0px;
+    left: 20px;
+  }
+  .catalog__productCard .h3 {
+    margin: 0;
+  }
+
+  .catalog__img {
+    width: auto;
+    height: 80%;
   }
 
   .advantages__main > img {

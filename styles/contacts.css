@@ -54,10 +54,9 @@
 .contacts__item {
   font-size: 22px;
   line-height: 33px;
-  color: #292D32;
+  color: #292d32;
   margin: -15px 200px 0 55px;
 }
-
 
 .contacts__content div:nth-child(4) {
   margin-top: 30px;
@@ -93,6 +92,7 @@ textarea {
 
 textarea {
   padding: 17px 15px;
+  height: 145px;
 }
 
 .layoutForLabel {
@@ -113,6 +113,10 @@ textarea {
 }
 
 @media (width < 426px) {
+  .contacts::after {
+    display: none;
+  }
+
   .contactsLayout {
     display: none;
   }
@@ -128,13 +132,36 @@ textarea {
   }
 
   .contacts__wrapper {
-
     position: static;
+  }
+
+  .contacts__content p img {
+    width: 19px;
+    height: auto;
   }
 
   .contacts__content,
   .application {
     border-radius: 0;
     padding: 30px;
+    width: auto;
+  }
+  
+  .application input, .application textarea {
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .application textarea {
+    height: 80px;
+  }
+  
+  .contacts__content .media {
+    width: 65px;
+  }
+  
+  .contacts__content .media img {
+    width: 27px;
+    height: 27px;
   }
 }
