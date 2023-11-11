@@ -9,7 +9,7 @@
 }
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   margin: auto;
   background-color: #fff;
 }
@@ -118,7 +118,7 @@ button.readMoreButton {
   color: #fff;
 }
 
-@media (width < 380px) {
+@media (width < 426px) {
   * {
     font-size: 15px;
     line-height: 22.5px;
@@ -147,7 +147,11 @@ button.readMoreButton {
     width: 45px;
     height: 45px;
   }
-  /* .classicFlex {
-    flex-direction: column;
-  } */
+
+  .blackCardH3 {
+    font-size: 18px;
+    line-height: 22.82px;
+    /* margin: 26px 0 -3px 0; */
+  }
+
 }

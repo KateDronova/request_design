@@ -24,7 +24,7 @@
 
 .news__card {
   position: relative;
-  width: 415px;
+  max-width: 415px;
   height: 364px;
   border-top-left-radius: 45px;
   border-bottom-right-radius: 45px;
@@ -42,6 +42,8 @@
   left: 0;
   z-index: 2;
   border-bottom-right-radius: 45px;
+  max-height: 146px;
+  max-width: 415px;
 }
 
 .news__supportingImg2 {
@@ -110,4 +112,27 @@ button.news__readMore {
   font-weight: 300;
   color: #292d32;
   line-height: 11.72px;
+}
+
+@media (width < 426px) {
+  .news__header {
+    flex-direction: column;
+  }
+
+  
+.news__card {
+  position: relative;
+  width: 415px;
+  height: 364px;
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  margin-right: 25px;
+}
+
+  .news__img,
+  .news__supportingImg {
+    height: auto;
+    /* height: 190px; */
+    width: 324px;
+  }
 }

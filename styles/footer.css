@@ -50,3 +50,9 @@ img.footer__dellLayout {
 .footer__item {
   margin-top: 1px;
 }
+
+@media (width < 425px) {
+  .footer {
+    height: 755px;
+  }
+}

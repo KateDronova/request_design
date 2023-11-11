@@ -13,14 +13,20 @@ nav.user {
   gap: 30px;
 }
 
-nav.user::after {
+#shoppingCartIcon {
+  position: relative;
+  height: 50px;
+}
+
+#shoppingCartIcon::after {
   position: absolute;
-  top: 36px;
-  right: 260px;
+  top: -1px;
+  right: -1px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   background-color: #3086c8;
+  z-index: 3;
 
   content: '3';
   font-size: 12px;
@@ -109,7 +115,7 @@ div.shadow {
 
 .burger__menu {
   position: absolute;
-  background-color: #FFF;
+  background-color: #fff;
   width: 375px;
   height: 390px;
   top: 90px;
@@ -130,7 +136,7 @@ div.shadow {
 
 .burger__menuItem a {
   text-decoration: none;
-  color: #292D32;
+  color: #292d32;
 }
 
 .burger {
@@ -160,7 +166,7 @@ div.shadow {
   transform: rotate(-45deg) translateY(0px);
 }
 
-@media (width < 380px) {
+@media (width < 426px) {
   .header {
     height: 90px;
   }
@@ -170,18 +176,16 @@ div.shadow {
     height: 60px;
   }
 
-  .menu__item {
+  .userName,
+  .menu__item,
+  #userCalendar,
+  #userFavourite {
     display: none;
   }
 
   .user img {
     width: 46px;
     height: 46px;
-  }
-
-  #userCalendar,
-  #userFavourite {
-    display: none;
   }
 
   .burger {
@@ -191,12 +195,16 @@ div.shadow {
     padding: 6px 14px;
   }
 
-  nav.user::after {
-    top: 20px;
-    right: 90px;
+  nav.user {
+    gap: 15px;
   }
 
-  .userName {
-    display: none;
+  nav.user::after {
+    top: 20px;
+    right: 75px;
+  }
+
+  .menu button {
+    margin-top: 8px;
   }
 }

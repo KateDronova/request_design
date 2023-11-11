@@ -1,9 +1,8 @@
 .catalog {
-  padding-top: 160px;
-  padding-bottom: 178px;
-  height: 1125px;
+  padding-top: 164px;
+  padding-bottom: 182px;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 40px;
   align-content: center;
 }
 
@@ -83,4 +82,36 @@
 
 .catalog .h3 {
   margin: 8px 0px;
+}
+
+@media (width < 425px) {
+  .catalog,
+  .advantages__container {
+    flex-direction: column;
+  }
+  .catalog {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-content: center;
+  }
+
+  .catalog__productCard {
+    width: 345px;
+    height: 275px;
+  }
+
+  .catalog__index {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .advantages__main > img {
+    height: 194px;
+    width: auto;
+  }
+
+  .advantages__layout {
+    height: 121px;
+    width: auto;
+  }
 }

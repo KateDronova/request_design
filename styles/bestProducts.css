@@ -24,7 +24,7 @@ button.scroll {
 }
 
 .bestProducts__content {
-  width: 400px;
+  max-width: 400px;
   gap: 20px;
 }
 
@@ -37,6 +37,12 @@ img.dellLayout {
   left: 260px;
   top: 97px;
   z-index: -1;
+  max-height: 480px;
+  width: auto;
+}
+
+img.laptopLayout375 {
+  display: none;
 }
 
 img.laptopLayout {
@@ -78,7 +84,7 @@ div.slider {
   &.active {
     width: 9px;
     height: 9px;
-    background-color: #292D32;
+    background-color: #292d32;
   }
 }
 
@@ -119,5 +125,97 @@ div.promotion {
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+
+@media (width < 426px) {
+  .bestProducts__wrapper {
+    flex-direction: column;
+    height: 593px;
+    padding-top: 64px;
+    padding-bottom: 0px;
+    gap: 6px;
+  }
+
+  .bestProducts__content {
+    height: 211px;
+  }
+
+  .bestProducts__h2 {
+    margin: -12px 0 29px 0;
+  }
+
+  div.slider {
+    padding-right: 0;
+    padding-top: 200px;
+    margin-bottom: 12px;
+    gap: 40px;
+    height: 325px;
+    justify-content: end;
+  }
+
+  div.promotion,
+  img.laptopLayout {
+    position: static;
+  }
+
+  div.promotion {
+    margin-left: -15px;
+    margin-right: -15px;
+    width: auto;
+  }
+  .promotion__h3 {
+    margin: 58px -20px 58px 20px;
+    line-height: 26px;
+  }
+
+  .slider__bestProduct {
+    height: 325px;
+    width: auto;
+    left: 0px;
+    top: 3px;
+  }
+
+  img.dellLayout {
+    height: 77px;
+    width: auto;
+    left: 32px;
+    top: 18px;
+    z-index: -1;
+  }
+
+  img.laptopLayout375 {
+    display: block;
+  }
+
+  img.laptopLayout,
+  .scroll {
+    display: none;
+  }
+
+  .slider__indicator {
+    width: 57px;
+    height: 5px;
+    margin-bottom: 8px;
+    margin-right: 0;
+    z-index: 3;
+  }
+  
+  .slider__circle {
+    width: 3px;
+    height: 3px;
+    &.active {
+      width: 5px;
+      height: 5px;
+    }
+  }
+  
+  .slider__longArrow {
+    margin-top: 102px;
+    z-index: 3;
+  }
+  .slider__longArrow img {
+    height: 14px;
+    width: auto;
   }
 }
