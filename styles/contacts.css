@@ -55,7 +55,8 @@
   font-size: 22px;
   line-height: 33px;
   color: #292d32;
-  margin: -15px 200px 0 55px;
+  margin: -15px 90px 0 55px;
+  text-wrap: wrap;
 }
 
 .contacts__content div:nth-child(4) {
@@ -112,7 +113,15 @@ textarea {
   z-index: 2;
 }
 
+.contacts__icon {
+  margin-right: 20px;
+}
+
 @media (width < 426px) {
+  .contacts {
+    height: auto;
+  }
+
   .contacts::after {
     display: none;
   }
@@ -126,18 +135,54 @@ textarea {
   }
 
   img.contacts__img {
-    height: 244.05px;
-    width: auto;
-    bottom: -32px;
+    height: 254.05px;
+    transform: rotate(14deg);
+    right: 48px;
+    top: 412px;
   }
 
   .contacts__wrapper {
     position: static;
+    height: auto;
+  }
+
+  .contacts__item {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 27px;
+    margin-right: 27px;
+    text-wrap: wrap;
+  }
+
+  .contacts__content .media {
+    width: 65px;
+    margin-top: 28px;
+  }
+
+  .contacts__content .media img {
+    width: 27px;
+    height: 27px;
   }
 
   .contacts__content p img {
     width: 19px;
     height: auto;
+  }
+  .contacts__description {
+    text-wrap: wrap;
+    margin-top: 25px;
+    margin-right: 40px;
+  }
+  .contacts__content div:nth-child(2) {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  .contacts__content div:nth-child(4) {
+    margin-top: 15px;
+  }
+
+  .contacts__icon {
+    margin-right: 8px;
   }
 
   .contacts__content,
@@ -146,8 +191,18 @@ textarea {
     padding: 30px;
     width: auto;
   }
-  
-  .application input, .application textarea {
+  .contacts__content {
+    padding-top: 106px;
+    padding-bottom: 54px;
+  }
+  .application {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 7px;
+  }
+
+  .application input,
+  .application textarea {
     padding: 10px;
     border-radius: 10px;
   }
@@ -155,13 +210,12 @@ textarea {
   .application textarea {
     height: 80px;
   }
-  
-  .contacts__content .media {
-    width: 65px;
+
+  .layoutForLabel {
+    top: 20px;
   }
-  
-  .contacts__content .media img {
-    width: 27px;
-    height: 27px;
+
+  .application__button {
+    margin-top: 25px;
   }
 }

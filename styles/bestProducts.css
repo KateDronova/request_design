@@ -137,6 +137,7 @@ div.promotion {
     flex-direction: column;
     padding-top: 64px;
     padding-bottom: 0px;
+    align-items: start;
     gap: 6px;
   }
 
@@ -155,6 +156,7 @@ div.promotion {
     gap: 40px;
     height: 325px;
     justify-content: end;
+    align-self: end;
   }
 
   div.promotion,
@@ -168,15 +170,15 @@ div.promotion {
     width: auto;
   }
   .promotion__h3 {
-    margin: 58px -20px 58px 20px;
+    margin: 58px -20px 58px 15px;
     line-height: 26px;
   }
 
   .slider__bestProduct {
     height: 325px;
     width: auto;
-    left: 0px;
-    top: -40px;
+    left: -175px;
+    top: -22px;
   }
 
   img.dellLayout {
@@ -196,6 +198,15 @@ div.promotion {
     display: none;
   }
 
+  .slider__longArrow {
+    margin-top: 102px;
+    z-index: 3;
+  }
+  .slider__longArrow img {
+    height: 14px;
+    width: auto;
+  }
+
   .slider__indicator {
     width: 57px;
     height: 5px;
@@ -203,7 +214,6 @@ div.promotion {
     margin-right: 0;
     z-index: 3;
   }
-  
   .slider__circle {
     width: 3px;
     height: 3px;
@@ -213,12 +223,4 @@ div.promotion {
     }
   }
   
-  .slider__longArrow {
-    margin-top: 102px;
-    z-index: 3;
-  }
-  .slider__longArrow img {
-    height: 14px;
-    width: auto;
-  }
 }
