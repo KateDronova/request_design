@@ -1,3 +1,7 @@
+.footer {
+  position: relative;
+}
+
 .footer__nav {
   height: 300px;
   padding: 60px 450px 60px 260px;
@@ -8,6 +12,7 @@
   height: 1px;
   margin: 0px 260px;
   border-top: 1px solid #e5e5e5;
+  z-index: 3;
 }
 
 .footer__contacts {
@@ -27,13 +32,6 @@
   align-self: center;
 }
 
-img.footer__dellLayout {
-  position: absolute;
-  top: 150px;
-  right: 0px;
-  z-index: -1;
-}
-
 .footer .h3 {
   padding-bottom: 7px;
 }
@@ -46,32 +44,123 @@ img.footer__dellLayout {
   margin-top: 1px;
 }
 
-@media (width < 425px) {
+img.footer__dellLayout {
+  position: absolute;
+  bottom: 165px;
+  right: 0px;
+}
+
+img.footer__dellLayout375 {
+  display: none;
+}
+
+@media (width < 426px) {
   .footer {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
+  }
+
+  .footer .h3 {
+    font-size: 18px;
+    line-height: 21.09px;
   }
 
   .footer__logo {
-    width: 71px;
     height: 71px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: calc(50% - 25px);
+    padding-right: calc(50% - 47px);
+    order: 1;
+  }
+
+  .footer__catalog {
+    order: 4;
+  }
+  .footer__catalogContainer {
+    height: 105px;
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap: 8px;
+  }
+
+  .footer__item {
+    margin-top: 5px;
+  }
+
+  .footer__catalogItem {
+    width: 50%;
+    line-height: 15px;
+  }
+
+  .footer__catalogItem a {
+    text-wrap: wrap;
+    line-height: 15px;
+  }
+
+  .footer__catalogItem:nth-child(2) {
+    order: 1;
+  }
+  .footer__catalogItem:nth-child(5) {
+    order: 2;
+  }
+  .footer__catalogItem:nth-child(1) {
+    order: 3;
+  }
+  .footer__catalogItem:nth-child(3) {
+    order: 3;
+  }
+  .footer__catalogItem:nth-child(4) {
+    order: 5;
+  }
+
+  .footer__user {
+    order: 3;
+  }
+
+  .footer__help {
+    order: 2;
   }
 
   .footer__nav {
     flex-wrap: wrap;
     height: auto;
+    padding: 30px 38px 30px 15px;
+    gap: 30px;
   }
 
   .footer__contacts {
     flex-direction: column;
     height: auto;
+    align-items: start;
+    gap: 12px;
   }
-  
+
+  .footer__contacts p {
+    margin-bottom: 3px;
+  }
+
   .footer__contacts .media {
     width: 90px;
   }
-  
+
   .footer__contacts .media img {
     width: 30px;
     height: 30px;
+  }
+
+  img.footer__dellLayout {
+    display: none;
+  }
+
+  img.footer__dellLayout375 {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    right: 16px;
+    width: 211px;
+    z-index: 1;
   }
 }

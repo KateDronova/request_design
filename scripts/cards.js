@@ -30,7 +30,7 @@ fetch('./productCardsInfo.json')
 fetch('./newsData.json')
   .then((response) => response.json())
   .then((data) => {
-    if (document.body.clientWidth < 425) {
+    if (document.body.clientWidth < 426) {
       data.length = 3;
     }
     data.map((item) => {
@@ -49,7 +49,7 @@ fetch('./newsData.json')
         'news__title'
       );
 
-      if (document.body.clientWidth > 425) {
+      if (document.body.clientWidth > 426) {
         createElementWithClass(
           dateContainer,
           'p',

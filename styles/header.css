@@ -207,4 +207,12 @@ div.shadow {
   .menu button {
     margin-top: 8px;
   }
+  .userMenu {
+    right: 5px;
+    width: 365px;
+  }
+  .userMenu::after {
+    right: 145px;
+    left: auto;
+  }
 }
